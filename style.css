@@ -23,15 +23,9 @@
     /* Optional padding to override default gridlex columns */ 
     [class*=col] { padding: 0; }
     
-    /* Utility Classes */ 
+/* ----------------- Universal Styles & utlitily classes ------- */ 
 
-.tall-50 { min-height: 50vh; }
-.tall-60 { min-height: 60vh; }
-.tall-70 { min-height: 70vh; }
-.tall-80 { min-height: 80vh; }
-.tall-90 { min-height: 90vh; }
-
-
+/*padding -------*/
 .padded-sm { padding: 2.5%; }
 .padded    { padding: 5%;   }
 .padded-lg { padding: 10%;  }
@@ -63,7 +57,7 @@
 .padded-l-0 { padding-left: 0; }
 .padded-r-0 { padding-right: 0; }
 
-/* Margin Utility Classes */ 
+/* Margin Utility Classes _----------*/ 
 
 .margin-t { margin-top: 5%; }
 .margin-b { margin-bottom: 5%; }
@@ -88,22 +82,71 @@
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+/* Min height ---------*/
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
 
-/* Typography */
+
+/* background & Image styles----------- */
+
+.bg-purple { 
+  background-color: #B188AE ; 
+  color: white;
+}
+
+.bg-dark-purple { 
+  background-color: #74226C ; 
+  color: white;
+}
+
+.bg-light { 
+  background-color: #FCFAFA;
+  color: #01452C; }
+
+.bg-image {
+  background-image: url('/Images/filler.png');
+  background-color: grey; 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.landscape     { padding-bottom: 66%:  }
+.portrait-tall { padding-bottom: 175%; }
+.portrait      { padding-bottom: 100%; }
+.square        { padding-bottom: 100%; }
+
+
+/* ----- Typography ----------------*/
+body {
+  font-family: 'playfair display', serif;  
+  Color: #01452C; 
+}
+
 .text-left    { text-align: left; }
 .text-right   { text-align: right; }
 .text-center  { text-align: center; }
-
-body {
-  font-family: 'playfair display', serif;  
-}
 
 h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
 }
 
+h2 { 
+  font-size: 3rem;
+  font-weight: 600; }
+h3 { 
+  font-size: 2rem; 
+  font-weight: 400; }
+h4 { font-size: 1.5rem; }
+
 p {
+  font-family: 'lato',sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.4; 
   margin-bottom: 1rem;
 }
@@ -114,7 +157,7 @@ h4:last-child,
 h5:last-child, 
 h6:last-child, 
 p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 a {
@@ -126,37 +169,14 @@ nav a {
     padding: 0.25rem;
 }
 
-a:hover { color: #a2745c; }
+a:hover { color: #1F7A8C; }
 
-/* background & Image styles */
-
-.bg-purple { 
-    background-color: #B188AE ; 
-    color: white;
-  }
-
-.bg-dark-purple { 
-    background-color: #74226C ; 
-    color: white;
-  }
-  
-.bg-light { 
-    background-color: #FCFAFA;
-    color: #01452C; }
-  
-.bg-image {
-    background-image: url('/Images/filler.png');
-    background-color: grey; 
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-  }
-  
 
   /* Custom Styles */
 
 .bordered {
-    border: 0px 1px 0px 0px solid #fff; 
+    border-bottom: solid #1F7A8C; 
+    padding: 0.5rem;
 }
 
 .button {
@@ -165,8 +185,10 @@ a:hover { color: #a2745c; }
   padding: 0.5rem 1rem;
   display: inline-block;
   font-weight: 400;
-  color: #74226C;
+  color: #FCFAFA;
 }
+
+.button:hover { color: #B188AE; }
 
 .bg-dark .button:hover {
     color: #B188AE;
@@ -198,8 +220,7 @@ input, textarea {
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid #e67e22;
-    /* featured color */
+    border: 2px solid #1F7A8C;
   }
   
   textarea {
