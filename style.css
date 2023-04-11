@@ -179,7 +179,7 @@ li {
 
 
 /*------------------- SM Media Query (48 em/ 768 px) ------------- */
-@media(max-width:768px) {
+@media (max-width: 48em) {
 .show-sm    { display: block;}
 .hide-sm    { display: none;}
 
