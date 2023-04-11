@@ -165,14 +165,35 @@ a {
 }
 
 nav a {
+    font-family: 'lato',sans-serif;
     text-decoration: none;
     padding: 0.25rem;
 }
 
 a:hover { color: #1F7A8C; }
 
+li {
+  font-family: 'lato',sans-serif;
+  font-size: 1rem;
+}
 
-  /* Custom Styles */
+
+/*------------------- SM Media Query (48 em/ 768 px) ------------- */
+.show-sm    { display: block;}
+.hide-sm    { display: none;}
+
+.center-sm  { text-align: center;}
+.left-sm    { text-align: center;}
+.right-sm   { text-align: center;}
+
+header h4 {font-size: 1rem;}
+header a { font-size: .75rem;}
+h2 { font-size: 2rem;}
+h3 { font-size: 1.5rem;}
+h4 {font-size: 1rem;}
+
+
+/*------------ Custom Styles *------------- */
 
 .bordered {
     border-bottom: solid #1F7A8C; 
@@ -208,6 +229,7 @@ a:hover { color: #1F7A8C; }
 
 /* Contact Form */
 input, textarea {
+    font-family: inherit;
     border-style: solid;
     border: 2px solid rgb(200, 200, 205);
     padding: 0.8em;
@@ -250,6 +272,10 @@ input, textarea {
   }
   form .button {
     width:100%;
+    color: #74226C; 
+    border: 2px solid rgb(200, 200, 205);
+    padding: 0.8em;
+    margin-top:.5rem;
   }
     @media(max-width:768px) {
      .email-signup input {
